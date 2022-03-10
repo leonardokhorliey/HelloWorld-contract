@@ -1,0 +1,170 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_identifier",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_balance",
+						"type": "uint256"
+					}
+				],
+				"name": "addUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieveAllUsers",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "identifier",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct HelloWorld.User[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_identifier",
+						"type": "uint256"
+					}
+				],
+				"name": "retrieveUser",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct HelloWorld.UserInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "identifier",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HelloWorld.sol": "HelloWorld"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HelloWorld.sol": {
+			"keccak256": "0x1d491f90ac7d96f076016fa3ff2da7bedf40fef6a8b19e799cca7b787acb04d6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://adcb78ecdb62007d2e34b8b57f83582392a9f93566ea515d9a729a077cc9b34c",
+				"dweb:/ipfs/QmQaGRwBGP3o7poiy3w1wgWfBTJRgUiZxpSg2X3wL3msEX"
+			]
+		}
+	},
+	"version": 1
+}
